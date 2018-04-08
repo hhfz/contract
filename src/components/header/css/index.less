@@ -1,0 +1,45 @@
+/*
+ * @name:  contacts
+ * @description:  less样式
+ * @Author: huifen.ling 
+ * @Date: 2018-04-03 19:45:22 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-04 21:28:28
+ */
+
+@charset "utf-8";
+@import '~@/global.less';
+
+.g-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0 30px;
+  height: 112px;
+  line-height: 112px;
+  color: #fff;
+  text-align: center;
+  background: @g-blue-bg-color;
+}
+
+/* 信息 */
+.text {
+  font-size: 34px;
+}
+
+.u-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.back {
+  left: 30px;
+  height: 50px;
+  width: 50px;
+  background: url('../assets/left-arrow.png') no-repeat left;
+  background-size: auto 100%;
+}
+

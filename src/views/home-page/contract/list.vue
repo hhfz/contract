@@ -1,0 +1,95 @@
+<template>
+  <div class="main">
+    <div class="list">
+      <item class="item" v-for="(item, index) in list" :key="index" :contract="item"/>
+    </div>
+  </div>
+</template>
+
+<script>
+import Item from './item.vue';
+
+const defaultListMap = {
+  0: [
+    [
+      { number: 'C00023698', status: 1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: 1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+    [
+      { number: 'C00023698', status: 1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+    [
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+  ],
+  1: [
+    [
+      { number: 'C00023698', status: 1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+  ],
+  2: [
+    [
+      { number: 'C00023698', status: 2, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+    [
+      { number: 'C00023698', status: 2, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+  ],
+  3: [
+    [
+      { number: 'C00023698', status: 3, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+  ],
+  4: [
+    [
+      { number: 'C00023698', status: 4, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+    [
+      { number: 'C00023698', status: 4, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+  ],
+  '-1': [
+    [
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+    [
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+    [
+      { number: 'C00023698', status: -1, content: '全日制劳动合同', time: '2017-6-9 12:12:12', },
+    ],
+  ],
+};
+
+export default {
+  props: {
+    status: {
+      required: true,
+    },
+  },
+  data () {
+    return {};
+  },
+  computed: {
+    list() {
+      const { status } = this;
+      return defaultListMap[status];
+    }
+  },
+  components: {
+    Item,
+  },
+}
+</script>
+
+<style lang="less" scoped>
+@import '~css/home-page/contract/list.less';
+</style>

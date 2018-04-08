@@ -1,0 +1,64 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-04 19:22:25 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-04 23:30:54
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+/* 状态栏 */
+.filter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 112px;
+  z-index: 10;
+  box-sizing: border-box;
+  height: 100px;
+  padding-bottom: 31px;
+  background-color: @g-blue-bg-color;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  height: 30px;
+  padding: 27px 0 12px;
+  line-height: 30px;
+  font-size: 28px;
+}
+
+.item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  color: #c6e5fa;
+  &.active {
+    color: #fff;
+  } 
+}
+
+.icon:not(:last-of-type):after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: url('~img/company-auth/next-arrow.png') no-repeat center;
+  background-size: auto 100%;
+}
+
+.scroll-box {
+  transition: .5s;
+
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+}

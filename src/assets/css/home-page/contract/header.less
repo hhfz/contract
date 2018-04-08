@@ -1,0 +1,65 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-03 20:13:39 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-04 23:51:12
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.header {
+  background-color: @g-blue-bg-color;
+}
+/* 搜索框 */
+.search {
+  padding: 16px 30px;
+  line-height: 0;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  box-sizing: border-box;
+  height: 80px;
+  width: 100%;
+  padding: 26px 32px 26px 98px;
+  line-height: 26px;
+  font-size: 24px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  &::-webkit-input-placeholder {
+    color: #c6e5fa;
+  }
+  &::-moz-input-placeholder {
+    color: #c6e5fa;
+  }
+  &::input-placeholder {
+    color: #c6e5fa;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 21px;
+  top: 50%;
+  margin-top: -30px;
+  background: url('~img/contract/search.png') no-repeat;
+  background-size: 100% auto;
+}
+
+/* block */
+.bg-block {
+  position: fixed;
+  top: 212px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: @g-blue-bg-color;
+}

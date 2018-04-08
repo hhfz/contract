@@ -1,0 +1,90 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-03 21:04:09 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-04 21:31:27
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.list {
+  display: flex;
+  height: 100px;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+}
+
+.active {
+  .home-page {
+    background-image: url('../assets/home-page-active.png');
+  }
+  .contract {
+    background-image: url('../assets/contract-active.png');
+  }
+  .contacts {
+    background-image: url('../assets/contacts-active.png');
+  }
+  .me {
+    background-image: url('../assets/me-active.png');
+  }
+  .text a{
+    color: @g-blue-bg-color;
+  }
+}
+
+.icon {
+  display: block;
+  height: 42px;
+  margin: 15px 0 11px;
+}
+
+.home-page {
+  background: url('../assets/home-page.png') no-repeat center;
+  background-size: 42px 46px;
+}
+
+.contract {
+  background: url('../assets/contract.png') no-repeat center;
+  background-size: 42px 46px;
+}
+
+.contacts {
+  background: url('../assets/contacts.png') no-repeat center;
+  background-size: 42px 46px;
+}
+
+.me {
+  background: url('../assets/me.png') no-repeat center;
+  background-size: 42px 46px;
+}
+
+.text {
+  display: block;
+  margin-bottom: @g-small-border-radius;
+  height: 22px;
+  line-height: 24px;
+  font-size: 22px;
+  text-align: center;
+  a {
+    color: #a2a2a2;
+  }
+  &.active {
+    a {
+      color: @g-blue-bg-color;
+    }
+  }
+}

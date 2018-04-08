@@ -1,0 +1,69 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-05 13:27:48 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-08 13:04:08
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.image-upload {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.im-box {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 2px solid @g-blue-bg-color;
+  border-radius: @g-small-border-radius;
+  background: url('./img/camera.png') no-repeat center;
+  background-size: auto 44px;
+}
+
+.im-img-wrap {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+}
+
+.im-img {
+  height: 100%;
+  border-radius: @g-small-border-radius;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  margin-top: -15px;
+  right: 0;
+  margin-right: -10px;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.3);
+  &:hover {
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
+.error {
+  border-color: @g-red-border-color;
+  background-image: url('./img/camera-error.png');
+}
+
+.im-text {
+  margin-top: 15px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 28px;
+  color: @g-dark-black-color;
+} 

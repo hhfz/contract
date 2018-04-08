@@ -1,0 +1,68 @@
+/* 变量 */
+
+/* 背景颜色 */
+@g-blue-bg-color: #60c0ff;
+@g-grey-bg-color: #ececec;
+@g-white-bg-color: #fff;
+/* 字体颜色 */
+@g-blue-color: #1491e2;
+@g-dark-black-color: #333;
+@g-black-color: #666;
+@g-grey-color: #808080;
+@g-white-color: #fff;
+/* 边框颜色 */
+@g-border-color: #e8eff5;
+@g-red-border-color: #f44f53;
+/* 边框圆角 */
+@g-small-border-radius: 10px;
+@g-medium-border-radius: 20px;
+@g-large-border-radius: 40px;
+
+/*  */
+.wrap {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 130px;
+}
+
+.grey-bg {
+  background-color: @g-grey-bg-color;
+}
+
+.g-bg-color {
+  background-color: @g-blue-bg-color;
+}
+
+.g-box-shadow {
+  box-shadow: 0px 3px 21px 5px rgba(96, 192, 255, 0.35);
+}
+
+.g-box {
+  border-radius: @g-small-border-radius;
+  .g-box-shadow;
+}
+
+.g-border {
+  border: 1px solid @g-border-color;
+}
+
+.g-border-top {
+  border-top: 1px solid @g-border-color;
+}
+
+.g-border-bottom {
+  border-bottom: 1px solid @g-border-color;
+}
+
+.g-border-left {
+  border-left: 1px solid @g-border-color;
+}
+
+.g-border-right {
+  border-right: 1px solid @g-border-color;
+}
+
+/* 全局样式 */
+.tc {
+  text-align: center;
+}

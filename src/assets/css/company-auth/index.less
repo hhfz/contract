@@ -1,0 +1,35 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-05 10:47:13 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-05 15:07:08
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.wrap {
+  background: @g-grey-bg-color;
+}
+
+/deep/ .mint-field {
+  height: 87px;
+  padding: 0 22px;
+  line-height: 87px;
+  &:not(:last-child) {
+    .g-border-bottom;
+  }
+}
+
+/deep/ .mint-cell-title {
+  width: 130px;
+  padding-right: 20px;
+  color: @g-dark-black-color;
+  font-size: 28px;
+}
+
+/deep/ .mint-cell-value {
+  color: @g-grey-color;
+  font-size: 24px;
+}

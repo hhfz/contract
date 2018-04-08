@@ -1,0 +1,117 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-03 21:13:00 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-04 21:31:32
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.wrap {
+  min-height: 100%;
+  padding: 142px 30px 0;
+  background-color: @g-blue-bg-color;
+}
+
+/* 个人信息 */
+.contact-info {
+  position: relative;
+  padding: 87px 0 53px;
+  background-color: #fff;
+  border-radius: @g-small-border-radius;
+}
+
+.avatar {
+  position: absolute;
+  z-index: 3;
+  top: -67px;
+  left: 50%;
+  margin-left: -67px;
+  width: 134px;
+  height: 134px;
+  background: url('~img/my/my.png') no-repeat;
+  background-size: cover;
+}
+
+.block {
+  text-align: center;
+}
+
+.username {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 34px;
+  color: #333;
+}
+
+.tel {
+  margin-bottom: 17px;
+  text-align: center;
+  font-size: 24px;
+  color: @g-grey-color;
+}
+
+.tag {
+  display: inline-block;
+  height: 50px;
+  padding: 0 26px;
+  margin-bottom: 40px;
+  line-height: 50px;
+  font-size: 28px;
+  color: #fff;
+  background-color: @g-blue-bg-color;
+  border-radius: 25px;
+}
+
+.btn {
+  text-align: center;
+  font-size: 28px;
+  color: @g-blue-bg-color;
+}
+
+/* 入口组 */
+.entry-group {
+  margin-top: 30px;
+}
+
+.list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item {
+  flex: 1;
+  padding: 59px 0 47px;
+  background-color: #fff;
+  border-radius: @g-small-border-radius;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.icon {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.personal-auth {
+  background-image: url('~img/my/personal-auth.png');
+}
+
+.company-auth {
+  background-image: url('~img/my/company-auth.png');
+}
+
+.my-signature {
+  background-image: url('~img/my/my-signature.png');
+}
+
+.seurity-seetting {
+  background-image: url('~img/my/seurity-setting.png');
+}

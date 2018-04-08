@@ -1,0 +1,93 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-05 10:47:13 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-05 22:32:06
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.main {
+  padding: 112px 30px 0;
+}
+
+.box {
+  position: relative;
+  height: 1000px;
+  background-color: @g-white-bg-color;
+  .g-box;
+}
+
+.list-box {
+  position: relative;
+  height: 800px;
+}
+
+.empty {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.empty-icon {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 31px;
+  background: url('~img/company-list/list/list.png') no-repeat center;
+  background-size: 100% auto;
+}
+
+.empty-text {
+  font-size: 32px;
+  color: @g-blue-bg-color;
+}
+
+.info {
+  margin: 0 30px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 28px;
+  color: @g-blue-color;
+  border-top: 1px solid @g-blue-bg-color;
+}
+
+.fix-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background-color: @g-white-bg-color;
+  border-radius: 50%;
+  .g-box-shadow;
+  &:after {
+    content: '+';
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: @g-blue-bg-color;
+  }
+}
+
+/deep/ .mint-cell-wrapper {
+  height: 100px;
+}
+
+/deep/ .mint-cell-text {
+  font-size: 32px;
+  color: @g-blue-color;
+}
+
+/deep/ .mint-cell-value {
+  font-size: 24px;
+  color: @g-blue-bg-color;
+}
+
+/deep/ .mint-cell-allow-right::after {
+  border-color: @g-blue-bg-color;
+}

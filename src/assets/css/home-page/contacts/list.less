@@ -1,0 +1,74 @@
+/*
+ * @name:  
+ * @description:  
+ * @Author: huifen.ling 
+ * @Date: 2018-04-03 20:01:17 
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-04 21:59:49
+ */
+@charset "utf-8";
+@import '~@/global.less';
+
+.g-main {
+  padding-top: 212px;
+}
+
+/* liat */
+.list {
+  position: relative;
+  z-index: 2;
+  padding: 0 30px;
+}
+
+.item {
+  display: flex;
+  padding: 16px 21px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 21px 5px rgba(96, 192, 255, 0.35);
+  border-radius: @g-small-border-radius;
+}
+
+.avatar {
+  flex: 0 0 88px;
+  height: 88px;
+  margin-right: 21px;
+}
+
+.contact-avatar {
+  background: url('~@/assets/img/contacts/contacts.png') no-repeat center;
+  background-size: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.title {
+  padding-top: 5px;
+  font-size: 0;  /* 解决inline-block间隙，但是chrome不行 */
+}
+
+.name {
+  display: inline-table;
+  margin-right: 8px;
+  font-size: 28px;
+  color: @g-blue-color;
+}
+
+.tag {
+  display: inline-table;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #fff;
+  background-color: @g-blue-bg-color;
+  border-radius: 20px;
+}
+
+.tel {
+  margin-top: 11px;
+  font-size: 28px;
+  color: @g-black-color;
+}
