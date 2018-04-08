@@ -31,6 +31,11 @@ export default {
       ifSeeMore: false,
     }
   },
+  watch: {
+    contract() {
+      this.ifSeeMore = false;
+    },
+  },
   methods: {
     changeClass () {
       this.ifSeeMore = !this.ifSeeMore;

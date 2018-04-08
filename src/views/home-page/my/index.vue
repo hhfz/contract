@@ -1,5 +1,5 @@
 <template>
-  <el-main class="wrap">
+  <section class="wrap">
     <div class="contact-info">
       <i class="avatar"></i>
       <div class="info">
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-  </el-main>
+  </section>
 </template>
 
 <script>
