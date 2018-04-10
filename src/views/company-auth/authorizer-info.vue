@@ -62,14 +62,14 @@ export default {
           prop: 'tel',
           rules: [
             { required: true, message: '请输入授权人电话' },
-            { validator: telValidator, message: '请输入正确格式的手机号码', },
+            { validator: telValidator, message: '请输入正确格式的手机号码', trigger: 'blur' },
           ],
         },
         {
           prop: 'IDnumber',
           rules: [
             { required: true, message: '请输入身份证号码' },
-            { validator: IDnumberValidator, message: '请输入正确格式的身份证号码', },
+            { validator: IDnumberValidator, message: '请输入正确格式的身份证号码', trigger: 'blur' },
           ],
         },
         {

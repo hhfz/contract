@@ -52,22 +52,22 @@ export default {
       rules: [
         {
           prop: 'name',
-          rules: [{ required: true, message: '请输入企业名称' }],
+          rules: [{ required: true, message: '请输入企业名称', trigger: 'blur' }],
         },
         {
           prop: 'tel',
           rules: [
-            { required: true, message: '请输入企业电话' },
-            { validator: telValidator, message: '请输入正确格式的手机号码', },
+            { required: true, message: '请输入企业电话', trigger: 'blur' },
+            { validator: telValidator, message: '请输入正确格式的手机号码', trigger: 'blur' },
           ],
         },
         {
           prop: 'address',
-          rules: [{ required: true, message: '请输入企业地址' }],
+          rules: [{ required: true, message: '请输入企业地址', trigger: 'blur' }],
         },
         {
           prop: 'license',
-          rules: [{ required: true, message: '请输入营业执照号码' }],
+          rules: [{ required: true, message: '请输入营业执照号码', trigger: 'blur' }],
         },
         {
           prop: 'licensePic',

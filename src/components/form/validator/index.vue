@@ -22,6 +22,9 @@ export default {
 
     }
   },
+  mounted() {
+    this.addListener();
+  },
   methods: {
     // 对所有验证规则进行验证
     validate() {
@@ -103,15 +106,56 @@ export default {
       }
       Toast(message);
     },
-    /* addListener() {
+    // 给设置了trigger属性的事件添加事件监听
+    addListener() {
+      const { requiredValidator, rules, form, formState, $el: oForm } = this;
+      // 标志当前是否已经有报错 toast是否正在提示错误
+      let isHint = false;
+      let timeId = null;
       for (let propRules of rules) {
-        for (let rule of propRules) {
+        const { prop } = propRules;
+        for (let rule of propRules.rules) {
           if (rule.trigger) {
-
+            const oInput = oForm.querySelector(`.j-${prop}`) && oForm.querySelector(`.j-${prop}`).querySelector('input');
+            // 为每个rule添加事件监听
+            oInput.addEventListener(rule.trigger, () => {
+              console.log('prop', prop);
+              let status = true;
+              // 必填性验证
+              if (rule.required) {
+                status = requiredValidator(prop, rule);
+              // 自定义验证
+              } else if (typeof rule.validator === 'function') {
+                status = rule.validator(form[prop], prop, rule);
+              }
+              // 验证成功
+              if (status) {
+                if (formState) {
+                  formState[`${prop}State`] = 'success';
+                }
+              // 验证失败
+              } else {
+                if (formState) {
+                  formState[`${prop}State`] = 'error';
+                }
+                if (!isHint) {
+                  isHint = true;
+                  Toast({
+                    message: rule.message,
+                    position: 'top',
+                    duration: 1000,
+                  });
+                  timeId = setTimeout(() => {
+                    isHint = false;
+                    clearTimeout(timeId);
+                  }, 1000);
+                }
+              }
+            });
           }
         }
       }
-    }, */
+    },
   }
 }
 </script>

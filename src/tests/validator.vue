@@ -52,13 +52,13 @@ export default {
         {
           prop: 'tel',
           rules: [
-            { required: true, message: '请输入授权人电话' },
-            { validator: this.telValidator, message: '请输入正确格式的手机号码' },
+            { required: true, message: '请输入授权人电话', trigger: 'blur' },
+            { validator: this.telValidator, message: '请输入正确格式的手机号码', trigger: 'blur' },
           ],
         },
         {
           prop: 'IDnumber',
-          rules: [{ required: true, message: '请输入授权人身份证号码' }],
+          rules: [{ required: true, message: '请输入授权人身份证号码', trigger: 'blur' }],
         },
         {
           prop: 'IDFace',
