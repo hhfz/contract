@@ -70,12 +70,22 @@ export default {
         this.$emit('input', val);
       }
     },
+    handleResize() {
+      // 监听resize事件，当窗口大小改变，滚动条的位置也要改变，移动端不太会出现resize情况
+      window.onresize = () => {
+        this.handleSelect(this.currentIndex);
+      }
+    },
   },
   mounted () {
+    this.handleResize();
     oList = this.$refs.list;
     oScrollBox = oList.querySelector('.scroll-box');
     oLabelList = oList.getElementsByClassName('j-label');
     this.handleSelect(this.currentIndex);
+  },
+  destroyed() {
+    window.onresize = null;
   },
 };
 </script>

@@ -1,0 +1,70 @@
+{
+  "getList": [
+    { 
+      "status": 0,
+      "list": [
+        { "id": 1, "number": "C00023698", "status": 1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" },
+        { "id": 4, "number": "C00023698", "status": 2, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": 0,
+      "list": [
+        { "id": 1, "number": "C00023698", "status": 2, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" },
+        { "id": 4, "number": "C00023698", "status": 3, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": 0,
+      "list": [
+        { "id": 1, "number": "C00023698", "status": 3, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" },
+        { "id": 4, "number": "C00023698", "status": 4, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": 1,
+      "list": [
+        { "id": 1, "number": "C00023698", "status": 1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" },
+        { "id": 4, "number": "C00023698", "status": -1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": 2,
+      "list": [
+        { "id": 2, "number": "C00023698", "status": 2, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" },
+        { "id": 4, "number": "C00023698", "status": -1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": 3,
+      "list": [
+        { "id": 3, "number": "C00023698", "status": 3, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" },
+        { "id": 4, "number": "C00023698", "status": -1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": 4,
+      "list": [
+        { "id": 4, "number": "C00023698", "status": 4, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": -1,
+      "list": [
+        { "id": 4, "number": "C00023698", "status": -1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": -1,
+      "list": [
+        { "id": 4, "number": "C00023698", "status": -1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    },
+    { 
+      "status": -1,
+      "list": [
+        { "id": 4, "number": "C00023698", "status": -1, "content": "全日制劳动合同", "time": "2017-6-9 12:12:12" }
+      ]
+    }
+  ]
+}

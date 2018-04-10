@@ -5,6 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 const sourceMapEnabled = isProduction
   ? config.build.productionSourceMap
   : config.dev.cssSourceMap
+const postcssConfig = require('./postcss.conf');
 
 module.exports = {
   loaders: utils.cssLoaders({
@@ -18,5 +19,6 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+  },
+  postcss: postcssConfig.postfactory(),
 }

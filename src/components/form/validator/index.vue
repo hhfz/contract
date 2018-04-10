@@ -103,6 +103,15 @@ export default {
       }
       Toast(message);
     },
+    /* addListener() {
+      for (let propRules of rules) {
+        for (let rule of propRules) {
+          if (rule.trigger) {
+
+          }
+        }
+      }
+    }, */
   }
 }
 </script>

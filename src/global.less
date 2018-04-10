@@ -37,31 +37,17 @@
   box-shadow: 0px 3px 21px 5px rgba(96, 192, 255, 0.35);
 }
 
-.g-box {
-  border-radius: @g-small-border-radius;
+/* 带参数mixins */
+.g-box(@border-radius: @g-small-border-radius) {
+  border-radius: @border-radius;
   .g-box-shadow;
 }
-
-.g-border {
+.g-border(all) {
   border: 1px solid @g-border-color;
 }
-
-.g-border-top {
-  border-top: 1px solid @g-border-color;
+.g-border(@place) when (default()) {
+  border-@{place}: 1px solid @g-border-color;
 }
-
-.g-border-bottom {
-  border-bottom: 1px solid @g-border-color;
-}
-
-.g-border-left {
-  border-left: 1px solid @g-border-color;
-}
-
-.g-border-right {
-  border-right: 1px solid @g-border-color;
-}
-
 /* 全局样式 */
 .tc {
   text-align: center;
