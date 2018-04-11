@@ -1,0 +1,101 @@
+/*
+ * @name:
+ * @description:
+ * @Author: huifen.ling
+ * @Date: 2018-04-11 13:36:14
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-11 15:31:10
+ */
+@charset 'utf-8';
+@import (reference) '~@/global.less';
+
+.box {
+  position: relative;
+  z-index: 2;
+}
+
+.block {
+  margin-bottom: 20px;
+  background-color: @g-white-bg-color;
+  .g-box;
+}
+
+.add {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 28px;
+  color: @g-blue-bg-color;
+  & span {
+    vertical-align: middle;
+  }
+}
+
+.add-btn {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* 签名列表 */
+.item {
+  height: 240px;
+}
+
+.signature {
+  height: 160px;
+  border-bottom: 2px solid @g-border-color;
+}
+
+.handler {
+  padding: 0 @g-padding;
+  overflow: hidden;
+}
+
+.select {
+  display: inline-block;
+  height: 78px;
+  font-size: 28px;
+  color: @g-dark-black-color;
+}
+
+.icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 13px;
+  vertical-align: middle;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.text {
+  vertical-align: middle;
+}
+
+.border {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 2px solid  @g-dark-black-color;
+  border-radius: 50%;
+}
+
+.delete {
+  float: right;
+}
+
+.delete-btn {
+  width: 34px;
+  height: 34px;
+  background-image: url('~img/my-signature/delete.png');
+}
+
+.selected{
+  .icon {
+    background-image: url('~img/my-signature/selected.png');
+  }
+  .text {
+    color: @g-blue-bg-color;
+  }
+}

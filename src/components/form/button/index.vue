@@ -1,5 +1,5 @@
 <template>
-  <p class="btn" @click="$emit('click')">{{ title }}</p>
+  <p class="btn" :class="type" @click="$emit('click')">{{ title }}</p>
 </template>
 
 <script>
@@ -8,6 +8,9 @@ export default {
     title: {
       required: true,
       type: String,
+    },
+    type: {
+      default: 'primary',
     },
   },
   data () {

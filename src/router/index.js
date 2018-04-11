@@ -8,6 +8,7 @@ import My from '@/views/home-page/my';
 import companyAuth from '@/views/company-auth';
 import companyList from '@/views/company-list';
 import personAuth from '@/views/person-auth';
+import MySignature from '@/views/my-signature';
 import securitySetting from '@/views/security-setting';
 
 import Validator from '@/tests/validator.vue';
@@ -63,6 +64,11 @@ const regularRoutes = [
     name: 'person-auth',
     path: '/person-auth',
     component: personAuth,
+  },
+  {
+    name: 'my-signature',
+    path: '/my-signature',
+    component: MySignature,
   },
   {
     name: 'security-setting',

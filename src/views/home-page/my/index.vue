@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="list">
-          <div class="item">
+          <div class="item" @click="jumpTo('my-signature')">
             <i class="icon my-signature"></i>
             <p class="tc">
               我的签名
