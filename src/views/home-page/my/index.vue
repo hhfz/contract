@@ -8,7 +8,7 @@
         <div class="block">
           <p class="tag">已实名</p>
         </div>
-        <p class="btn">&nbsp;&nbsp;&nbsp;切换身份 <spn class="en-font">》</spn></p>
+        <p class="btn">&nbsp;&nbsp;&nbsp;切换身份 <span class="en-font">》</span></p>
       </div>
     </div>
 
