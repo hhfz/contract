@@ -1,30 +1,27 @@
 <template>
   <section class="wrap">
     <header-component />
-    <person-auth v-if="!user" @success="user = {}"/>
-    <person-info v-else />
+    <setting />
   </section>
 </template>
 
 <script>
 import HeaderComponent from './header';
-import PersonAuth from './person-auth';
-import PersonInfo from './person-info';
+import Setting from './setting';
 
 export default {
   data () {
     return {
-      user: {},
+      user: null,
     }
   },
   components: {
     HeaderComponent,
-    PersonAuth,
-    PersonInfo,
+    Setting,
   }
 }
 </script>
 
 <style lang="less" scoped>
-@import '~css/person-auth/index.less';
+@import '~css/security-setting/index.less';
 </style>

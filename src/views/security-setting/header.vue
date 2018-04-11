@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <!-- header -->
-    <header-component title="个人认证" :leftVisible="true"/>
+    <header-component title="安全设置" :leftVisible="true"/>
 
     <!-- 背景蓝块 -->
     <section class="bg-block"></section>
@@ -23,5 +23,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '~css/person-auth/header.less';
+@import '~css/security-setting/header.less';
 </style>

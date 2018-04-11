@@ -1,0 +1,32 @@
+/*
+ * @name:
+ * @description:
+ * @Author: huifen.ling
+ * @Date: 2018-04-11 10:38:22
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-11 11:11:26
+ */
+@charset 'utf-8';
+@import '~@/global.less';
+
+.box {
+  position: relative;
+  padding-bottom: 80px;
+  background-color: @g-white-bg-color;
+  .g-box;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 0 70px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: @g-blue-color;
+  font-size: 32px;
+  background-color: @g-white-bg-color;
+  .g-box(@g-large-border-radius);
+}

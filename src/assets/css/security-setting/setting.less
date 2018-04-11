@@ -1,0 +1,28 @@
+/*
+ * @name:
+ * @description:
+ * @Author: huifen.ling
+ * @Date: 2018-04-11 11:20:39
+ * @Last Modified by: huifen.ling
+ * @Last Modified time: 2018-04-11 11:48:37
+ */
+ @charset 'utf-8';
+ @import '~@/global.less';
+ 
+ .item {
+   margin-bottom: 58px;
+ }
+
+ /* reset mint-ui */
+ /deep/ .mint-cell {
+   padding: 0 24px;
+   background-color: transparent; /* 解决父元素圆角不显示的问题 */
+   .g-border(bottom);
+ }
+ 
+ /deep/ .mint-cell-wrapper {
+   padding: 0;
+   height: 87px;
+   line-height: 87px;
+ }
+ 

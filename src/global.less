@@ -96,3 +96,28 @@
 .en-font {
   font-family: '幼圆';
 }
+/* min-ui */
+.mint-field {
+  height: 87px;
+  padding: 0 22px;
+  line-height: 87px;
+  &:not(:last-child) {
+      .g-border(bottom);
+  }
+}
+
+.mint-cell-title {
+  width: 130px;
+  padding-right: 20px;
+  color: @g-blue-color;
+  font-size: 28px;
+}
+
+.mint-field .mint-cell-title{
+  color: @g-dark-black-color;
+}
+
+.mint-cell-value {
+  color: @g-grey-color;
+  font-size: 24px;
+}

@@ -34,7 +34,7 @@
               我的签名
             </p>
           </div>
-          <div class="item">
+          <div class="item" @click="jumpTo('security-setting')">
             <i class="icon seurity-seetting"></i>
             <p class="tc">
               安全设置
