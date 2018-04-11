@@ -4,7 +4,7 @@
  * @Author: huifen.ling 
  * @Date: 2018-04-03 20:13:39 
  * @Last Modified by: huifen.ling
- * @Last Modified time: 2018-04-09 14:29:18
+ * @Last Modified time: 2018-04-10 19:09:13
  */
 @charset "utf-8";
 @import '~@/global.less';
@@ -29,19 +29,13 @@
   padding: 26px 32px 26px 98px;
   line-height: 26px;
   font-size: 24px;
+  color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 40px;
-  &::-webkit-input-placeholder {
-    color: #c6e5fa;
-  }
-  &::-moz-input-placeholder {
-    color: #c6e5fa;
-  }
-  &::input-placeholder {
-    color: #c6e5fa;
-  }
 }
+
+.placeholder(~'.search-input', #c6e5fa);
 
 .icon {
   position: absolute;

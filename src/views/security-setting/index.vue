@@ -14,7 +14,7 @@ import PersonInfo from './person-info';
 export default {
   data () {
     return {
-      user: null,
+      user: {},
     }
   },
   components: {

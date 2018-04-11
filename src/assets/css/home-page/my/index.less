@@ -4,14 +4,14 @@
  * @Author: huifen.ling 
  * @Date: 2018-04-03 21:13:00 
  * @Last Modified by: huifen.ling
- * @Last Modified time: 2018-04-09 14:29:49
+ * @Last Modified time: 2018-04-10 20:58:01
  */
 @charset "utf-8";
 @import '~@/global.less';
 
 .wrap {
   min-height: 100%;
-  padding: 142px 30px 120px;
+  padding: 142px 30px 100px;
   background-color: @g-blue-bg-color;
 }
 
@@ -43,6 +43,7 @@
   margin-bottom: 12px;
   text-align: center;
   font-size: 34px;
+  line-height: 33px;
   color: #333;
 }
 
@@ -50,6 +51,7 @@
   margin-bottom: 17px;
   text-align: center;
   font-size: 24px;
+  line-height: 21px;
   color: @g-grey-color;
 }
 
@@ -83,7 +85,8 @@
 
 .item {
   flex: 1;
-  padding: 59px 0 47px;
+  padding: 0 0 47px;
+  font-size: 28px;
   background-color: #fff;
   border-radius: @g-small-border-radius;
   &:not(:last-child) {
@@ -93,9 +96,9 @@
 
 .icon {
   display: block;
-  margin: auto;
-  width: 100px;
-  height: 120px;
+  margin: 0 auto -40px;
+  width: 220px;
+  height: 240px;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }

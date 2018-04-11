@@ -1,11 +1,11 @@
 <template>
   <footer class="footer">
     <ul class="list">
-      <li class="item" :class="{active: currentIndex === index }"
+      <li class="item" :class="{active: currentIndex === index }" @click="jumpTo(item.path)"
         v-for="(item, index) in list" :key="index">
         <i class="icon" :class="[ item.icon ]"></i>
         <label class="text">
-          <router-link :to="item.path">{{ item.title }}</router-link>
+          <p>{{ item.title }}</p>
         </label>
       </li>
     </ul>
@@ -44,6 +44,9 @@ export default {
           this.currentIndex = i;
         }
       }
+    },
+    jumpTo(url) {
+      this.$router.push(url);
     },
   },
   components: {},

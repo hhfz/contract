@@ -266,3 +266,24 @@ i { font-style: normal; }
     /* box */
     .content{ width: unit(@content,@unit); margin:0 auto; }
 }
+
+.mint-field {
+    height: 87px;
+    padding: 0 22px;
+    line-height: 87px;
+    &:not(:last-child) {
+        .g-border(bottom);
+    }
+}
+  
+.mint-cell-title {
+    width: 130px;
+    padding-right: 20px;
+    color: @g-dark-black-color;
+    font-size: 28px;
+}
+
+.mint-cell-value {
+    color: @g-grey-color;
+    font-size: 24px;
+}

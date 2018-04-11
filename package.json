@@ -5,6 +5,7 @@
   "author": "Huifen Ling <1194414850@qq.com>",
   "private": true,
   "scripts": {
+    "mock": "node_modules/.bin/json-server --watch mock/db.json",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",

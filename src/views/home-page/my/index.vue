@@ -8,13 +8,13 @@
         <div class="block">
           <p class="tag">已实名</p>
         </div>
-        <p class="btn">切换身份 >></p>
+        <p class="btn">&nbsp;&nbsp;&nbsp;切换身份 <spn class="en-font">》</spn></p>
       </div>
     </div>
 
     <div class="entry-group">
         <div class="list">
-          <div class="item">
+          <div class="item" @click="jumpTo('person-auth')">
             <i class="icon personal-auth"></i>
             <p class="tc">
               个人认证

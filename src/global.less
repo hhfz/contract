@@ -14,10 +14,15 @@
 @g-border-color: #e8eff5;
 @g-red-border-color: #f44f53;
 /* 边框圆角 */
-@g-small-border-radius: 10px;
+@g-small-border-radius: 10px; /*no*/
 @g-medium-border-radius: 20px;
 @g-large-border-radius: 40px;
-
+/* margin */
+@g-margin: 30px;
+/* padding */
+@g-padding-top: 212px;
+@g-s-padding-top: 112px;
+@g-padding: 30px;
 /*  */
 .wrap {
   box-sizing: border-box;
@@ -48,7 +53,46 @@
 .g-border(@place) when (default()) {
   border-@{place}: 1px solid @g-border-color;
 }
+.g-padding(all) {
+  padding: @g-padding;
+}
+.g-padding(vertical) {
+  padding: @g-padding 0;
+}
+.g-padding(horizontal) {
+  padding: 0 @g-padding;
+}
+.g-padding(@place) when (default()) {
+  padding-@{place}: @g-padding;
+}
+.g-margin(all) {
+  margin: @g-margin;
+}
+.g-margin(vertical) {
+  margin: @g-margin 0;
+}
+.g-margin(horizontal) {
+  margin: 0 @g-margin;
+}
+.g-margin(@place) when (default()) {
+  margin-@{place}: @g-margin;
+}
+.placeholder(@class, @color) {
+  @{class}::-webkit-input-placeholder {
+    color: @color;
+  }
+  @{class}::-moz-input-placeholder {
+    color: @color;
+  }
+  @{class}::input-placeholder {
+    color: @color;
+  }
+}
 /* 全局样式 */
 .tc {
   text-align: center;
+}
+
+.en-font {
+  font-family: '幼圆';
 }

@@ -7,6 +7,7 @@ import Contacts from '@/views/home-page/contacts';
 import My from '@/views/home-page/my';
 import companyAuth from '@/views/company-auth';
 import companyList from '@/views/company-list';
+import personAuth from '@/views/person-auth';
 
 import Validator from '@/tests/validator.vue';
 
@@ -56,6 +57,11 @@ const regularRoutes = [
     path: '/company-list',
     name: 'company-list',
     component: companyList,
+  },
+  {
+    name: 'person-auth',
+    path: '/person-auth',
+    component: personAuth,
   },
 ];
 
